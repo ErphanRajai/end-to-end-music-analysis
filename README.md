@@ -65,7 +65,7 @@ Here is your content organized into a clean, professional Markdown structure, re
 ### 1. The Big Picture: Artists & Trends
 My first dashboard focuses on the macro trends. I analyzed the Top 10 Artists based on average popularity and how music popularity scores have fluctuated over the decades.
 
-![> **Figure 1:** High-level overview of artist performance and temporal trends.](dashboard1.png)
+![> **Figure 1:** High-level overview of artist performance and temporal trends.](visuals/dashboard1.png)
 
 **Key Insights:**
 * **Genre Dominance:** Pop, Latin, and EDM are the most prevalent genres in the dataset.
