@@ -75,14 +75,14 @@ My first dashboard focuses on the macro trends. I analyzed the Top 10 Artists ba
 ### 2. Genre Distribution
 I dug deeper into how genres are distributed across playlists. This helps understand the composition of the dataset and potential biases towards specific subgenres.
 
-![> **Figure 2:** Tree map visualizing the density of sub-genres.](dashboard3.png)
+![> **Figure 2:** Tree map visualizing the density of sub-genres.](visuals/dashboard3.png)
 
 **Insight:** Categories like "Indie Poptimism" and "Electro House" show significant counts, indicating the dataset is heavily skewed towards modern, electronic-influenced music.
 
 ### 3. Granular Track View
 A detailed view allowing for the inspection of individual track metrics such as BPM (Tempo), Danceability, and Energy. This view was designed for data exploration, allowing the user to filter tracks that meet specific criteria (e.g., "High Energy" + "Low Acousticness").
 
-![> **Figure 3:** Tabular view for filtering specific track attributes.](dashboard2.jpg)
+![> **Figure 3:** Tabular view for filtering specific track attributes.](visuals/dashboard2.jpg)
 
 ---
 
@@ -94,7 +94,7 @@ Out of curiosity, I took the analyzed data into Python to see if a machine could
 ### 1. What actually drives popularity?
 After training the model, I used Feature Importance to understand what the model found most valuable.
 
-![> **Figure 4:** Random Forest Feature Importance ranking.](plot1.png)
+![> **Figure 4:** Random Forest Feature Importance ranking.](visuals/plot1.png)
 
 **The "Artist" Revelation:**
 The model revealed a fascinating truth: `track_artist_encoded` (The Artist's Reputation) is by far the most important predictor. Audio features like loudness, tempo, and danceability matter, but they are secondary to *who* is releasing the song.
@@ -102,14 +102,14 @@ The model revealed a fascinating truth: `track_artist_encoded` (The Artist's Rep
 ### 2. Audio Correlations
 I checked for multicollinearity to ensure the model wasn't using redundant features.
 
-![> **Figure 5:** Correlation heatmap of audio features.](plot2.jpg)
+![> **Figure 5:** Correlation heatmap of audio features.](visuals/plot2.jpg)
 
 **Insight:** There is a strong negative correlation between energy and acousticness. High-energy tracks tend to be less acoustic (electronic), which aligns with the Pop/EDM dominance found in the Power BI analysis.
 
 ### 3. Hits vs. Flops
 To visualize the difference between a "Hit" (Popularity > 70) and a "Flop" (Popularity < 30), I compared their audio profiles.
 
-![> **Figure 6:** Box plots comparing audio features of Hits vs. Flops.](plot3.png)
+![> **Figure 6:** Box plots comparing audio features of Hits vs. Flops.](visuals/plot3.png)
 
 **Insight:** "Hits" (Orange box) tend to be consistently louder (higher dB) and have a tighter distribution of Danceability compared to Flops.
 
