@@ -82,7 +82,7 @@ I dug deeper into how genres are distributed across playlists. This helps unders
 ### 3. Granular Track View
 A detailed view allowing for the inspection of individual track metrics such as BPM (Tempo), Danceability, and Energy. This view was designed for data exploration, allowing the user to filter tracks that meet specific criteria (e.g., "High Energy" + "Low Acousticness").
 
-![> **Figure 3:** Tabular view for filtering specific track attributes.](visuals/dashboard2.jpg)
+![> **Figure 3:** Tabular view for filtering specific track attributes.](visuals/dashboard2.png)
 
 ---
 
@@ -102,7 +102,7 @@ The model revealed a fascinating truth: `track_artist_encoded` (The Artist's Rep
 ### 2. Audio Correlations
 I checked for multicollinearity to ensure the model wasn't using redundant features.
 
-![> **Figure 5:** Correlation heatmap of audio features.](visuals/plot2.jpg)
+![> **Figure 5:** Correlation heatmap of audio features.](visuals/plot2.png)
 
 **Insight:** There is a strong negative correlation between energy and acousticness. High-energy tracks tend to be less acoustic (electronic), which aligns with the Pop/EDM dominance found in the Power BI analysis.
 
