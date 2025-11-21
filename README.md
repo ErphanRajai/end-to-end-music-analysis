@@ -14,6 +14,7 @@ This repository documents my end-to-end workflow, starting from raw data cleanin
 
 Repository Structure
 
+```
 ├── data/
 │   └── spotify_songs.csv       # Raw and cleaned dataset
 ├── dashboards/
@@ -24,7 +25,7 @@ Repository Structure
 ├── notebooks/
 │   └── prediction_model.py     # Python ML script
 └── README.md
-
+```
 
 The Workflow
 
